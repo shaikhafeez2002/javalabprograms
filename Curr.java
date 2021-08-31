@@ -1,0 +1,26 @@
+import java.util.*;
+public interface convert
+{
+  public void converter();
+}
+class Dollartoinr implements convert
+{ 
+  public void converter()
+  {
+   System.out.println("Enter the value of dollar");
+   Scanner b=new Scanner(System.in);
+   int c=b.nextInt();
+   double d=c*0.014;
+   System.out.println("Ruppee value is ");
+   System.out.println(d);
+  }
+}
+ 
+class Curr extends Dollartoinr
+{ 
+  public static void main(String args[]);
+  { 
+   Dollartoinr e=new Dollartoinr();
+   e.converter();
+  }
+}    
